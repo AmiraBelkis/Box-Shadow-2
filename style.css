@@ -1,0 +1,84 @@
+:root {
+    --x: 0px;
+    --y: 0px;
+    --blur: 0px;
+    --color: #000000;
+    --color2: #3c67d6;
+}
+
+.main-container {
+    position: relative;
+    border: 5px solid #680734;
+    width: 500px;
+    height: 325px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: var(--color2);
+    box-shadow: var(--x) var(--y) var(--blur) var(--color);
+    transition: .2s;
+    margin: 10%;
+}
+
+#Box-color {
+    position: relative;
+    top: 60px;
+    right: -35px;
+    border: none;
+}
+
+
+/*-----------------Copy Btn Animation ---------------*/
+
+.CopyBtn {
+    border: 0;
+    position: relative;
+    padding: 1.0rem 2.5rem 0rem 2.5rem;
+    background: transparent;
+    outline: none;
+    color: #111111;
+}
+
+.CopyBtn::after,
+.CopyBtn::before {
+    border: 0;
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    z-index: -2;
+    display: none;
+}
+
+.CopyBtn::before {
+    background-color: #27ccb6;
+}
+
+.CopyBtn::after {
+    background-color: #1f22d8;
+}
+
+.CopyBtn:hover {
+    color: lavender;
+}
+
+.CopyBtn:hover::before,
+.CopyBtn:hover::after {
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.CopyBtn:hover::after {
+    top: 0.5rem;
+    left: 1rem;
+}
+
+.CopyBtn:hover::before {
+    top: 0.7rem;
+    left: 0.7rem;
+}
