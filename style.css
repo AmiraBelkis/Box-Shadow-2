@@ -75,6 +75,8 @@ h1 {
     width: 200px;
 }
 
+.cl:hover {}
+
 .color {
     border: 5px solid var(--darkBlue);
     border-radius: 50px;
@@ -110,6 +112,11 @@ h1 {
 textarea:disabled,
 button {
     color: var(--darkBlue);
+}
+
+.copy:not(button) {
+    border: 1px solid var(--darkBlue);
+    border-radius: 18px;
 }
 
 .copy:not(textarea):hover {
