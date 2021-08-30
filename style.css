@@ -1,84 +1,67 @@
 :root {
+    --lightBlue: #edf2f5;
+    --babyBlue: #98d2f9;
+    --blue: #067eed;
+    --darkBlue: #0e3854;
     --x: 0px;
     --y: 0px;
     --blur: 0px;
-    --color: #000000;
-    --color2: #3c67d6;
+    --spread: 0px;
+    --opacity: 1;
 }
 
-.main-container {
-    position: relative;
-    border: 5px solid #680734;
-    width: 500px;
-    height: 325px;
+* {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
 }
 
-.box {
-    width: 150px;
-    height: 150px;
-    background: var(--color2);
-    box-shadow: var(--x) var(--y) var(--blur) var(--color);
-    transition: .2s;
-    margin: 10%;
-}
-
-#Box-color {
-    position: relative;
-    top: 60px;
-    right: -35px;
-    border: none;
-}
-
-
-/*-----------------Copy Btn Animation ---------------*/
-
-.CopyBtn {
-    border: 0;
-    position: relative;
-    padding: 1.0rem 2.5rem 0rem 2.5rem;
-    background: transparent;
-    outline: none;
-    color: #111111;
-}
-
-.CopyBtn::after,
-.CopyBtn::before {
-    border: 0;
-    content: "";
-    position: absolute;
-    height: 40%;
-    width: 10%;
-    z-index: -2;
-    display: none;
-}
-
-.CopyBtn::before {
-    background-color: #27ccb6;
-}
-
-.CopyBtn::after {
-    background-color: #1f22d8;
-}
-
-.CopyBtn:hover {
-    color: lavender;
-}
-
-.CopyBtn:hover::before,
-.CopyBtn:hover::after {
-    display: block;
-    top: 0;
-    height: 100%;
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--darkBlue);
     width: 100%;
-    border-radius: 50%;
 }
 
-.CopyBtn:hover::after {
-    top: 0.5rem;
-    left: 1rem;
+h1 {
+    font: bold 2em 'Simplified Arabic', sans-serif;
+    color: var(--blue);
+    margin: 1rem auto;
 }
 
-.CopyBtn:hover::before {
-    top: 0.7rem;
-    left: 0.7rem;
+.main-div {
+    background: var(--lightBlue);
+    border-radius: 25px;
+    margin: .5rem auto;
+    height: 20em;
+    width: 80%;
+    padding: 0;
 }
+
+.options {
+    background: var(--babyBlue);
+    border-radius: 25px;
+    border: 2px solid var(--darkBlue);
+    height: 100%;
+    padding: 3% 5%;
+}
+
+.selector {
+    background: var(--lightBlue);
+    border: 2px solid var(--darkBlue);
+    border-radius: 25px;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vl {
+    border-right: 2px solid var(--darkBlue);
+    padding: 0.3rem 0.5em 0.3rem 0.25em;
+    margin-right: 0.6rem;
+}
+
+
+/*-----------------Copy Btn---------------*/

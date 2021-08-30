@@ -1,5 +1,5 @@
 let inputs = document.querySelectorAll(".input");
-let x, y, Blur, color;
+let x, y, Blur, color, spread, opacity;
 /*--------------*/
 function start() {
     x = document.getElementById("x").value;
