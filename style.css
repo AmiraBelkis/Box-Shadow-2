@@ -8,6 +8,8 @@
     --blur: 0px;
     --spread: 0px;
     --opacity: 1;
+    --boxColor: var(--darkBlue);
+    --shadowColor: #000000;
 }
 
 * {
@@ -96,11 +98,11 @@ h1 {
 }
 
 .box {
-    background: var(--darkBlue);
+    background: var(--boxColor);
     width: 230px;
     height: 240px;
     border-radius: 25px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
+    box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--shadowColor);
     margin-bottom: 90px;
 }
 
