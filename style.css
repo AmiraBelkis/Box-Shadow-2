@@ -120,6 +120,8 @@ button {
 
 .copy:not(button) {
     border: 1px solid var(--darkBlue);
+    padding: 1% 2%;
+    width: 510px;
     border-radius: 18px;
 }
 
