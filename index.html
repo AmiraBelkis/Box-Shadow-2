@@ -19,32 +19,37 @@
             <div class="col-4 options">
                 <button class="selector"> 
                     <div class="vl">X-axis</div>
-                    <input type="range" min="-50" max="50" id="x" value="0" oninput="start()" /> <div class="val"> 0</div>
+                    <input type="range" min="-50" max="50" id="x" value="0" oninput="X()" /> 
+                    <div class="val"> 0 </div>
                 </button>
                 <button class="selector">
                     <div class="vl">Y-axis</div>
-                    <input type="range" min="-50" max="50" id="y" value="0" oninput="start()" /> 0
+                    <input type="range" min="-50" max="50" id="y" value="0" oninput="Y()" /> 
+                    <div class="val"> 0 </div>
                 </button>
                 <button class="selector"> 
                     <div class="vl">Spread</div> 
-                    <input type="range" min="-50" max="50" id="spread" value="0" oninput="start()" /> 0 
+                    <input type="range" min="0" max="50" id="spread" value="0" oninput="Spread()" /> 
+                    <div class="val"> 0 </div> 
                 </button>
                 <button class="selector"> 
                     <div class="vl">Blur</div > 
-                    <input type="range" min="-50" max="50" id="blur" value="0" oninput="start()" /> 0 
+                    <input type="range" min="0" max="50" id="blur" value="0" oninput="shadowBlur()" /> 
+                    <div class="val"> 0 </div> 
                 </button>
                 <button class="selector"> 
                     <div class="vl">Opacity</div> 
-                    <input type="range" min="0" max="1" step="0.1" id="opacity" value="10" oninput="start()" /> 1 
+                    <input type="range" min="0" max="1" step="0.1" id="opacity" value="10" oninput="Opacity()" /> 
+                    <div class="val"> 1 </div> 
                 </button>
                 <hr/>
                 <button class="selector" style=" cursor: default;"> 
                 <div class="vl cl">Box color</div>
-                <input type="color" class="color"  id="boxColorPicker" value="#0e3854" oninput="start()">
+                <input type="color" class="color"  id="boxColorPicker" value="#0e3854" oninput="BoxColor()">
             </button>
                 <button class="selector" style=" cursor: default;"> 
                 <div class="vl cl" >Shadow color</div> 
-                <input type="color" class="color"  id="shadowColorPicker" oninput="start()">
+                <input type="color" class="color"  id="shadowColorPicker" oninput="ShadowColor()">
             </button>
             </div>
             <div class="col-8 result">
