@@ -61,7 +61,12 @@ h1 {
     border-right: 2px solid var(--darkBlue);
     padding: 0.3rem 0.5em 0.3rem 0.25em;
     margin-right: .6rem;
-    /* make it 7rem in hover*/
+    /* make it 7rem in hover .6 in regular*/
+}
+
+.selector input[type='range'] {
+    margin-right: .6rem;
+    display: none;
 }
 
 .options>hr {
@@ -74,8 +79,6 @@ h1 {
 .cl {
     width: 200px;
 }
-
-.cl:hover {}
 
 .color {
     border: 5px solid var(--darkBlue);

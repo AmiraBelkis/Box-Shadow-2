@@ -17,18 +17,21 @@
     <div class="container main-div">
         <div class="row">
             <div class="col-4 options">
-                <button class="selector"> <div class="vl">X-axis</div> 0 </button>
-                <button class="selector"> <div class="vl">Y-axis</div> 0 </button>
-                <button class="selector"> <div class="vl">Spread</div> 0 </button>
-                <button class="selector"> <div class="vl">Blur</div> 0 </button>
-                <button class="selector"> <div class="vl">Opacity</div> 1 </button>
+                <button class="selector"> 
+                    <div class="vl">X-axis</div>
+                     <input type="range" min="-50" max="50" id="x" value="0" oninput="start()" /> 0
+                     </button>
+                <button class="selector"> <div class="vl">Y-axis</div> <input type="range" min="-50" max="50" id="y" value="0" oninput="start()" /> 0 </button>
+                <button class="selector"> <div class="vl">Spread</div> <input type="range" min="-50" max="50" id="spread" value="0" oninput="start()" /> 0 </button>
+                <button class="selector"> <div class="vl">Blur</div > <input type="range" min="-50" max="50" id="blur" value="0" oninput="start()" /> 0 </button>
+                <button class="selector"> <div class="vl">Opacity</div> <input type="range" min="0" max="10" id="opacity" value="10" oninput="start()" /> 1 </button>
                 <hr/>
                 <button class="selector" style=" cursor: default;"> 
                 <div class="vl cl">Color</div>
                 <input type="color" class="color"  id="colorPicker">
             </button>
                 <button class="selector" style=" cursor: default;"> 
-                <div class="vl cl" >Shadow color</div>
+                <div class="vl cl" >Shadow color</div> 
                 <input type="color" class="color"  id="colorPicker">
             </button>
             </div>

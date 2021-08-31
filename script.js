@@ -1,3 +1,23 @@
+let selectors = document.getElementsByClassName('selector');
+for (let i = 0; i < selectors.length - 2; i++) {
+    try {
+        selectors[i].addEventListener('mouseenter', () => selectors[i].children[1].style = 'display:block');
+        selectors[i].addEventListener('mouseleave', () => selectors[i].childNodes[3].style = 'display:none');
+
+    } catch (error) {
+        console.log(i);
+    }
+}
+
+function showRange(element) {
+    // ;
+    console.log('show Range');
+}
+
+function hideRange(element) {
+    console.log('hide range');
+
+}
 let inputs = document.querySelectorAll(".input");
 let x, y, Blur, color, spread, opacity;
 /*--------------*/
