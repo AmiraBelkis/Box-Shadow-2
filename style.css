@@ -102,7 +102,7 @@ h1 {
     height: 240px;
     border-radius: 25px;
     box-shadow: var(--x) var(--y) var(--blur) var(--spread) var(--shadowColor);
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .copy {
