@@ -4,7 +4,7 @@ for (let i = 0; i < selectors.length - 2; i++) {
     selectors[i].addEventListener('mouseleave', () => selectors[i].childNodes[3].style = 'display:none');
 }
 let val = document.getElementsByClassName('val');
-let x, y, Blur, spread, opacity, boxColor, shadowColor;
+let x, y, Blur, spread, boxColor, shadowColor;
 /*-------------X--------------*/
 function X() {
     document.documentElement.style.setProperty("--x", x + "px");
@@ -31,14 +31,6 @@ function Spread() {
     spread = document.getElementById("spread").value;
     document.documentElement.style.setProperty("--spread", spread + "px");
     val[2].innerHTML = spread;
-
-}
-
-/*-------------opacity--------------*/
-function Opacity() {
-    val[4].innerHTML = opacity;
-    opacity = document.getElementById("opacity").value;
-    document.documentElement.style.setProperty("--opacity", opacity);
 
 }
 

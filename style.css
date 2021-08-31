@@ -7,7 +7,6 @@
     --y: 0px;
     --blur: 0px;
     --spread: 0px;
-    --opacity: 1;
     --boxColor: var(--darkBlue);
     --shadowColor: #000000;
 }
