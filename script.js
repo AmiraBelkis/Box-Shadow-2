@@ -72,9 +72,10 @@ function ChangeTxt() {
 /*------------Copy Css Code----------*/
 function copy() {
     let element = document.createElement("textarea");
-    element.value = `box-Shadow: ${x}px ${y}px ${Blur}px ${spread}px  ${shadowColor};`;
+    element.value = `box-shadow: ${x}px ${y}px ${Blur}px ${spread}px  ${shadowColor};`;
     document.body.appendChild(element);
     element.select();
     document.execCommand("copy");
     document.body.removeChild(element);
+    alert('Style was copied')
 }
